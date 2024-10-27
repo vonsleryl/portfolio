@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FaJs, FaReact, FaCss3Alt, FaNodeJs, FaFigma, FaHtml5 } from 'react-icons/fa'; // Import icons including FaHtml5
+import { FaJs, FaReact, FaCss3Alt, FaNodeJs, FaFigma, FaHtml5 } from 'react-icons/fa';
 
 const About = () => {
   return (
@@ -23,7 +23,7 @@ const About = () => {
             whileHover={{ scale: 1.05 }}
           >
             <img
-              src="/src/assets/images/pp.jpg" // Replace with the actual path to your photo
+              src="/src/assets/images/pp.jpg"
               alt="Vonsleryl Igot"
               className="w-full h-full object-cover"
             />
@@ -32,14 +32,14 @@ const About = () => {
           {/* Right Side - Information */}
           <div className="flex flex-col justify-center text-center lg:text-left space-y-6">
             <motion.p 
-              className="text-lg lg:text-xl leading-relaxed" // Reduced text size
+              className="text-lg lg:text-xl leading-relaxed"
               initial={{ y: 20, opacity: 0 }} 
               animate={{ y: 0, opacity: 1 }} 
               transition={{ duration: 0.5 }}
             >
               I'm Vonsleryl Igot, a passionate frontend web developer. I enjoy building dynamic, visually engaging web applications that prioritize user experience. My focus is on writing clean, efficient code and creating pixel-perfect designs. With a love for learning, I continually improve my skills to stay updated with the latest technologies and design trends.
             </motion.p>
-            <div className="text-sm lg:text-base space-y-3"> {/* Smaller text size */}
+            <div className="text-sm lg:text-base space-y-3">
               <motion.p
                 initial={{ y: 20, opacity: 0 }} 
                 animate={{ y: 0, opacity: 1 }} 
@@ -64,43 +64,43 @@ const About = () => {
           </div>
         </div>
 
-        {/* Skills Section - Moved Below Personal Information */}
+        {/* Skills Section */}
         <motion.div
-          className="mt-12 flex flex-col items-center" // Centered the skills section
+          className="mt-12 flex flex-col items-center"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.6 }}
         >
-          <div className="flex space-x-12"> {/* Increased space between icons */}
+          <div className="flex space-x-6 sm:space-x-8 lg:space-x-12"> {/* Responsive space adjustments */}
             <motion.div
-              whileHover={{ scale: 1.2 }} // Scale animation on hover
+              whileHover={{ scale: 1.2 }}
               transition={{ duration: 0.3 }}
             >
-              <FaReact title="React" className="text-blue-500 text-4xl" /> {/* Adjusted icon size */}
+              <FaReact title="React" className="text-blue-500 text-4xl" />
             </motion.div>
             <motion.div
-              whileHover={{ scale: 1.2 }} // Scale animation on hover
+              whileHover={{ scale: 1.2 }}
               transition={{ duration: 0.3 }}
             >
-              <FaJs title="JavaScript" className="text-yellow-500 text-4xl" /> {/* Adjusted icon size */}
+              <FaJs title="JavaScript" className="text-yellow-500 text-4xl" />
             </motion.div>
             <motion.div
-              whileHover={{ scale: 1.2 }} // Scale animation on hover
+              whileHover={{ scale: 1.2 }}
               transition={{ duration: 0.3 }}
             >
-              <FaHtml5 title="HTML" className="text-orange-500 text-4xl" /> {/* Added HTML icon */}
+              <FaHtml5 title="HTML" className="text-orange-500 text-4xl" />
             </motion.div>
             <motion.div
-              whileHover={{ scale: 1.2 }} // Scale animation on hover
+              whileHover={{ scale: 1.2 }}
               transition={{ duration: 0.3 }}
             >
-              <FaCss3Alt title="CSS" className="text-blue-600 text-4xl" /> {/* Adjusted icon size */}
+              <FaCss3Alt title="CSS" className="text-blue-600 text-4xl" />
             </motion.div>
             <motion.div
-              whileHover={{ scale: 1.2 }} // Scale animation on hover
+              whileHover={{ scale: 1.2 }}
               transition={{ duration: 0.3 }}
             >
-              <FaFigma title="Figma" className="text-pink-600 text-4xl" /> {/* Adjusted icon size */}
+              <FaFigma title="Figma" className="text-pink-600 text-4xl" />
             </motion.div>
           </div>
         </motion.div>
