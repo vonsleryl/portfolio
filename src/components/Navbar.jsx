@@ -8,17 +8,21 @@ const Navbar = ({ toggleDarkMode, isDarkMode }) => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const handleLinkClick = () => {
+    setIsMenuOpen(false); // Closes the menu when a link is clicked
+  };
+
   return (
-    <nav className="bg-blue-950 dark:bg-gray-900 text-white p-4">
+    <nav className="bg-white dark:bg-gray-900 text-gray-900 dark:text-white p-4">
       <div className="max-w-6xl mx-auto flex justify-between items-center">
-        <h1 className="text-2xl font-bold">Vons</h1>
+        <h1 className="text-2xl font-semibold">vons</h1>
 
         {/* Desktop Links */}
         <div className="hidden md:flex space-x-4 items-center">
-          <a href="#home" className="hover:text-gray-400">Home</a>
-          <a href="#about" className="hover:text-gray-400">About</a>
-          <a href="#projects" className="hover:text-gray-400">Projects</a>
-          <a href="#contact" className="hover:text-gray-400">Contact</a>
+          <a href="#home" className="hover:text-gray-600 dark:hover:text-gray-400">Home</a>
+          <a href="#about" className="hover:text-gray-600 dark:hover:text-gray-400">About</a>
+          <a href="#projects" className="hover:text-gray-600 dark:hover:text-gray-400">Projects</a>
+          <a href="#contact" className="hover:text-gray-600 dark:hover:text-gray-400">Contact</a>
           
           {/* Enhanced Day/Night Toggle Switch with Icons */}
           <label className="flex items-center cursor-pointer">
@@ -70,11 +74,11 @@ const Navbar = ({ toggleDarkMode, isDarkMode }) => {
 
       {/* Mobile Menu Links */}
       {isMenuOpen && (
-        <div className="md:hidden bg-blue-950 dark:bg-gray-900 text-white p-4 space-y-4">
-          <a href="#home" className="block hover:text-gray-400">Home</a>
-          <a href="#about" className="block hover:text-gray-400">About</a>
-          <a href="#projects" className="block hover:text-gray-400">Projects</a>
-          <a href="#contact" className="block hover:text-gray-400">Contact</a>
+        <div className="md:hidden bg-white dark:bg-gray-900 text-gray-900 dark:text-white p-4 space-y-4">
+          <a href="#home" className="block hover:text-gray-600 dark:hover:text-gray-400" onClick={handleLinkClick}>Home</a>
+          <a href="#about" className="block hover:text-gray-600 dark:hover:text-gray-400" onClick={handleLinkClick}>About</a>
+          <a href="#projects" className="block hover:text-gray-600 dark:hover:text-gray-400" onClick={handleLinkClick}>Projects</a>
+          <a href="#contact" className="block hover:text-gray-600 dark:hover:text-gray-400" onClick={handleLinkClick}>Contact</a>
         </div>
       )}
     </nav>

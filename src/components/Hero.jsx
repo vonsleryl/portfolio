@@ -6,11 +6,16 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="h-[75vh] bg-black flex items-center justify-center text-gray-900 relative"
+      className="h-[75vh] bg-cover bg-center bg-no-repeat flex items-center justify-center relative"
+      style={{
+        backgroundImage: "url('src/assets/images/backgroundimg.jpeg')", // Replace with your actual image path
+      }}
     >
+      <div className="absolute inset-0 bg-black opacity-50"></div> {/* Dark overlay for readability */}
+      
       <div className="relative z-10 flex flex-col items-center w-3/4 lg:w-1/2 space-y-4 px-8 text-center">
         <motion.h1
-          className="text-4xl lg:text-3xl font-bold text-white tracking-tight leading-tight"
+          className="text-4xl lg:text-4xl font-semibold text-white tracking-tight leading-tight"
           initial={{ y: -30, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.6 }}
@@ -25,6 +30,7 @@ const Hero = () => {
         >
           I am a frontend web developer. I provide clean code and pixel-perfect design, making websites more interactive with web animations.
         </motion.p>
+        
         <div className="flex space-x-6 mt-4">
           <motion.a
             href="https://www.facebook.com/vansleryl.cantil/"
