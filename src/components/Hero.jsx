@@ -1,16 +1,15 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { FaFacebook, FaInstagram, FaEnvelope } from 'react-icons/fa';
+import background_img from '../assets/images/background_img.jpeg';
 
 const Hero = () => {
   return (
     <section
       id="home"
       className="h-[75vh] bg-cover bg-center bg-no-repeat flex items-center justify-center relative"
-      style={{
-        backgroundImage: "url('src/assets/images/backgroundimg.jpeg')", // Replace with your actual image path
-      }}
-    >
+      style={{ backgroundImage: `url(${background_img})` }}>
+
       <div className="absolute inset-0 bg-black opacity-50"></div> {/* Dark overlay for readability */}
       
       <div className="relative z-10 flex flex-col items-center w-3/4 lg:w-1/2 space-y-4 px-8 text-center">
