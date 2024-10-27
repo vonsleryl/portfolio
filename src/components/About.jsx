@@ -23,7 +23,7 @@ const About = () => {
             whileHover={{ scale: 1.05 }}
           >
             <img
-              src="/src/assets/images/pp.jpg"
+              src="src/assets/images/pp.jpg"
               alt="Vonsleryl Igot"
               className="w-full h-full object-cover"
             />
