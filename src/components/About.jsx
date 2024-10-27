@@ -17,7 +17,7 @@ const About = () => {
           
           {/* Left Side - Image with Animation */}
           <motion.div
-            className="flex-shrink-0 w-80 h-80 lg:w-[24rem] lg:h-[24rem] rounded-full overflow-hidden shadow-2xl"
+            className="flex-shrink-0 w-48 h-48 sm:w-64 sm:h-64 md:w-80 md:h-80 lg:w-[24rem] lg:h-[24rem] rounded-full overflow-hidden shadow-2xl"
             initial={{ scale: 0.9, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
             transition={{ duration: 0.8 }}
@@ -29,6 +29,7 @@ const About = () => {
               className="w-full h-full object-cover"
             />
           </motion.div>
+
 
           {/* Right Side - Information */}
           <div className="flex flex-col justify-center text-center lg:text-left space-y-6">
