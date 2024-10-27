@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { FaJs, FaReact, FaCss3Alt, FaNodeJs, FaFigma, FaHtml5 } from 'react-icons/fa';
+import ppImage from '/src/assets/images/pp.jpg';
 
 const About = () => {
   return (
@@ -23,7 +24,7 @@ const About = () => {
             whileHover={{ scale: 1.05 }}
           >
             <img
-              src="src/assets/images/pp.jpg"
+              src={ppImage}
               alt="Vonsleryl Igot"
               className="w-full h-full object-cover"
             />
