@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { FaJs, FaReact, FaCss3Alt, FaNodeJs, FaFigma, FaHtml5 } from 'react-icons/fa';
 import ppImage from '/src/assets/images/p.jpg';
+import resumeFile from '/src/assets/files/Resume.pdf'; // Import your resume file
 
 const About = () => {
   return (
@@ -29,7 +30,6 @@ const About = () => {
               className="w-full h-full object-cover"
             />
           </motion.div>
-
 
           {/* Right Side - Information */}
           <div className="flex flex-col justify-center text-center lg:text-left space-y-6">
@@ -63,6 +63,20 @@ const About = () => {
                 transition={{ duration: 0.5, delay: 0.5 }}
               ><strong>Address:</strong> Ibabao Pusok, Lapu Lapu City, Cebu City, Philippines</motion.p>
             </div>
+
+            {/* Download Resume Button*/}
+            <div className="mt-4">
+              <motion.a
+                href={resumeFile}
+                download="Vonsleryl_Igot_Resume.pdf"
+                className="inline-block bg-blue-600 text-white font-semibold px-4 py-2 rounded-md shadow-md hover:bg-blue-500 transition duration-300 text-sm"
+                initial={{ y: 0, opacity: 0.9 }}
+                whileHover={{ y: -5, opacity: 1 }}
+                transition={{ duration: 0.2, ease: "easeInOut" }}
+              >
+                Download Resume
+              </motion.a>
+            </div>
           </div>
         </div>
 
@@ -73,7 +87,7 @@ const About = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.6 }}
         >
-          <div className="flex space-x-6 sm:space-x-8 lg:space-x-12"> {/* Responsive space adjustments */}
+          <div className="flex space-x-6 sm:space-x-8 lg:space-x-12">
             <motion.div
               whileHover={{ scale: 1.2 }}
               transition={{ duration: 0.3 }}
