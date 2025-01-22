@@ -1,8 +1,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { FaJs, FaReact, FaCss3Alt, FaNodeJs, FaFigma, FaHtml5 } from 'react-icons/fa';
-import ppImage from '/src/assets/images/p.jpg';
-import resumeFile from '/src/assets/files/vonslerylresume.pdf'; // Import your resume file
+import ppImage from '/src/assets/images/ppp.jpg';
+import resumeFile from '/src/assets/files/vonsleryl.igot_resume.pdf'; // Import your resume file
 
 const About = () => {
   return (
@@ -66,7 +66,7 @@ const About = () => {
 
             {/* Download Resume Button*/}
             <div className="mt-4">
-              <motion.a
+              {/* <motion.a
                 href={resumeFile}
                 download="vonslerylresume.pdf"
                 className="inline-block bg-blue-600 text-white font-semibold px-4 py-2 rounded-md shadow-md hover:bg-blue-500 transition duration-300 text-sm"
@@ -75,7 +75,7 @@ const About = () => {
                 transition={{ duration: 0.2, ease: "easeInOut" }}
               >
                 Download Resume
-              </motion.a>
+              </motion.a> */}
             </div>
           </div>
         </div>
