@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { FaJs, FaReact, FaCss3Alt, FaNodeJs, FaFigma, FaHtml5 } from 'react-icons/fa';
 import ppImage from '/src/assets/images/ppp.jpg';
-import resumeFile from '/src/assets/files/vonsleryl.igot_resume.pdf'; // Import your resume file
+// import resumeFile from '/src/assets/files/vonsleryl.igot_resume.pdf'; // Import your resume file
 
 const About = () => {
   return (
